@@ -12,10 +12,10 @@ out_format="$(str_as_single_line '
 *%proc.pid %container.id %container.image
 %proc.name
 %evt.dir%evt.type
+%evt.res
 %fd.name
-%fdlist.names
-"""%proc.cmdline"""
-"""%evt.info"""
+%proc.cmdline
+%evt.info
 %syslog.severity.str
 %syslog.message
 ')"

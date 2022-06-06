@@ -29,7 +29,7 @@ model = make_pipeline(
         scoring='accuracy',
         estimator=SGDOneClassSVM(nu=.3, learning_rate='invscaling', eta0=2, verbose=True,),
         param_distributions={
-            'nu': [.5, .3, .1],
+            'nu': [.5, .3, .1, .01],
             'eta0': [2, 1, .5],
         },
     ),
